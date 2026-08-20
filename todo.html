@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TITLE -->
+        <h1>📝 To-Do App</h1>
+
+
+        <!-- INPUT AREA -->
+        <div class="input-box">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task"
+            >
+               <select id="priority">
+                <option value="low">🟢 Low</option>
+                <option value="medium" selected>🟡 Medium</option>
+                <option value="high">🔴 High</option>
+    </select>
+
+            <input
+                type="date"
+                id="dueDate"
+            >
+
+            <button id="addBtn">Add</button>
+
+        </div>
+
+
+        <!-- SEARCH -->
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search tasks..."
+        >
+
+
+        <!-- FILTER BUTTONS -->
+        <div class="filters">
+
+            <button id="allBtn" class="active-filter">
+                All
+            </button>
+
+            <button id="activeBtn">
+                Active
+            </button>
+
+            <button id="completedBtn">
+                Completed
+            </button>
+
+        </div>
+
+
+        <!-- TASK LIST -->
+        <ul id="taskList"></ul>
+
+
+        <!-- COUNTER -->
+        <p id="taskCounter"> Total: 0 | Completed: 0 </p>
+        
+        <div class="progress-section">
+    <p id="progressText">Progress: 0%</p>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+</div>
+
+        <!-- CLEAR ALL -->
+        <button id="clearBtn"> Clear All </button>
+
+        <button id="themeBtn">🌙 Dark Mode</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
